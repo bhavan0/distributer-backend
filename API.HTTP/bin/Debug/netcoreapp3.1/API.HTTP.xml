@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API.HTTP</name>
+    </assembly>
+    <members>
+        <member name="M:API.HTTP.Controllers.ItemsController.GetAllItems">
+            <summary>
+            Get All Items Of Distributer.
+            </summary>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItemsController.GetItemById(System.Int32)">
+            <summary>
+            Get Item By Name
+            </summary>
+            <param name="itemId">Id of item to be fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItemsController.AddItem(Repository.Entities.ItemEntity)">
+            <summary>
+            Add Item to Catalog.
+            </summary>
+            <param name="item">Item To be Entered</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItemsController.UpdateItem(Repository.Entities.ItemEntity)">
+            <summary>
+            Update An Item in the Catalog
+            </summary>
+            <param name="item">Item to be Updated.</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItenarysController.AddItemsBoughtForDate(Repository.Entities.ItenaryEntity)">
+            <summary>
+            Add Items Bought for Date
+            </summary>
+            <param name="itemDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItenarysController.UpdateItemsBoughtForDate(Repository.Entities.ItenaryEntity)">
+            <summary>
+            Update Items Bought for Date
+            </summary>
+            <param name="itemDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItenarysController.UpdateItemsSoldForDate(System.Int32,System.Int32)">
+            <summary>
+            Update The Itenary sold for a date
+            </summary>
+            <param name="itenaryId">Itenary to be updated</param>
+            <param name="soldCount">New Sold Count</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItenarysController.GetItenaryForDay(System.String)">
+            <summary>
+            Get Itenary for a Day
+            </summary>
+            <param name="date">Date for which itenary is to be fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItenarysController.GetTillDateItenary">
+            <summary>
+            Get Total Itenary fetched till date
+            </summary>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItenarysController.GetTillDateItenaryOfOneItem(System.Int32)">
+            <summary>
+            Get Till Date Itenary of one Item.
+            </summary>
+            <param name="itemId">Item Id for which itenary is to be fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.ItenarysController.GetOnDateItenaryOfOneItem(System.Int32,System.String)">
+            <summary>
+            Get Itenary of a date of an Item
+            </summary>
+            <param name="itemId">Item id for which itenary is to fetched</param>
+            <param name="date">date for which itenary is to be fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.PaymentsController.GetAllPaymenetsDoneByStore(System.Int32)">
+            <summary>
+            Get All Payments done by Store.
+            </summary>
+            <param name="storeId">Store Id for which it has to be fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.PaymentsController.GetTotalPaymenetsRecieved">
+            <summary>
+            Get Total amount Recieved till Date
+            </summary>
+        </member>
+        <member name="M:API.HTTP.Controllers.PaymentsController.GetTotalPaymenetsRecievedOnDate(System.String)">
+            <summary>
+            Get Total amount Recieved on Date
+            </summary>
+            <param name="date">Date for which total is to be retrieved</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.PaymentsController.GetTotalPaymenetsRecievedByStoreOnDate(System.Int32,System.String)">
+            <summary>
+            Get Total Payment A particular store has given on a date
+            </summary>
+            <param name="storeId">Store Id for which it has to be fetched</param>
+            <param name="date">Date for which it has to be fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.PaymentsController.AddPaymentForStoreOnDate(Repository.Entities.PaymentEntity)">
+            <summary>
+            Add Payment given by the store
+            </summary>
+            <param name="payment">Payment details recieved</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.PaymentsController.UpdatePaymentForStoreOnDate(Repository.Entities.PaymentEntity)">
+            <summary>
+            Update Payment Recieved on a Date
+            </summary>
+            <param name="payment">Payment details to be updated</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoreItemsController.GetAllItemBoughtByStore(System.Int32)">
+            <summary>
+            Get All Items bought by store
+            </summary>
+            <param name="storeId">Store Id to be fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoreItemsController.GetAllItemBoughtByStoreOnDate(System.Int32,System.String)">
+            <summary>
+            Get all Items Bought by Store on a particular date
+            </summary>
+            <param name="storeId">Store Id for which Data is to be fetched</param>
+            <param name="date">Date for which it has to be fetched (YYYY-MM-DD)</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoreItemsController.AddItemBoughtByStoreOnDate(Repository.Entities.StoreItemEntity)">
+            <summary>
+            Add Items Bought by the store on a particular date
+            </summary>
+            <param name="storeItemEntity">Store Item Entity that has to be inserted</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoreItemsController.UpdateItemBoughtByStoreOnDate(Repository.Entities.StoreItemEntity)">
+            <summary>
+            Update the Items Bought by the Store on a particular date
+            </summary>
+            <param name="storeItemEntity">Store Item Entity that has to be updated</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoresController.GetAllStores">
+            <summary>
+            Get All Stores entered
+            </summary>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoresController.GetStoreById(System.Int32)">
+            <summary>
+            Get Store By Name.
+            </summary>
+            <param name="storeId">Store id to be Fetched</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoresController.AddStore(Repository.Entities.StoreEntity)">
+            <summary>
+            Add Store to List
+            </summary>
+            <param name="store">Store to be Entered</param>
+        </member>
+        <member name="M:API.HTTP.Controllers.StoresController.UpdateStore(Repository.Entities.StoreEntity)">
+            <summary>
+            Update Store By Id
+            </summary>
+            <param name="store">Store to be Updated</param>
+        </member>
+    </members>
+</doc>
